@@ -1,0 +1,20 @@
+{
+  "name": "vite-npm",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "rollup-plugin-i18n-auto": "^0.1.1",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.2.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.0"
+  }
+}
