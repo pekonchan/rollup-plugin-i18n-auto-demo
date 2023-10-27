@@ -1,7 +1,5 @@
-# Vue 3 + Vite
+本项目为使用`rollup-plugin-i18n-auto-demo`的demo工程。
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+是vue3 + vite + vue-i18n 组成。
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+可运行dev打开页面，会发现自动根据打开的页面涉及到的文件把中文提取到根目录下`lang`文件夹里
