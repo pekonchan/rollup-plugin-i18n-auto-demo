@@ -1,19 +1,24 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import test from './components/test.js'
+
+function refresh (value) {
+    window.sessionStorage.setItem('rollup-plugin-i18n-auto-demo__locale', value.target.value)
+    window.location.reload(true)
+}
 </script>
 
 <template>
   <div>
-    <select name="localLang" id="localLang" v-model="$i18n.locale">
+    <select name="localLang" id="localLang" v-model="$i18n.locale" @change="refresh">
       <option value="zh">zh</option>
       <option value="en">en</option>
     </select>
     <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
+        <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+        <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
     {{test}}
     <!-- 注释 -->
