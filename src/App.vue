@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import Test from "./components/Test.vue";
 import test from './components/test.js'
 
 function refresh (value) {
@@ -26,6 +27,7 @@ function refresh (value) {
     我来了
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <Test msg="Test Error"></Test>
 </template>
 
 <style scoped>

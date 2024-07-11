@@ -31,7 +31,16 @@ export default defineConfig(({ command }) => {
             secretKey: '' // your key
         }
     }
-    plugins.push(i18nAuto(i18nAutoConf))
+    // plugins.push(i18nAuto(i18nAutoConf))
+    plugins.push(i18nAuto({
+        exclude: ['node_modules/**'],
+        include: ['**.js', '**.jsx', '**.ts', '**.tsx', '**.vue'], // 针对什么文件进行国际化词条
+        output: {
+            path: path.resolve('src/locales'),
+            generate: true // 生成代码词条配置文件，默认为true，不写也可以
+        },
+        transform: false // 不转译源码
+    }))
     return {
         plugins
     }
